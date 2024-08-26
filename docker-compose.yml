@@ -31,7 +31,7 @@ services:
         networks:
             - bridge
         healthcheck:
-            test: [ "CMD", "nc", "-z", "localhost", "32181" ]
+            test: [ "CMD", "nc", "-z", "localhost", "9092" ]
             interval: 10s
             retries: 5
 
